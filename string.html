@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str1=new String("Introduction to web programming");
+        var str2=("class")
+        document.write("the first string is"+str1+"<br>")
+        document.write("the second string is"+str2+"<br>")
+        document.write("character at 2 position is"+str1.charAt(2));
+
+        var str4=str1.toLowerCase();
+        document.write("lowercase of string is"+str4+"<br>")
+
+        var str5=str1.toUpperCase();
+        document.write("uppercase of string is"+str5+"<br>")
+
+        var str6=str1.indexOf("programming");
+        document.write("index of programming of string is"+str6+"<br>")
+
+        var str7=str1.lastIndexOf("programming");
+        document.write("lastindexof programming of string is"+str7+"<br>")
+
+        var str8=str1.trim("programming");
+        document.write("trim of programming of string is"+str8+"<br>")
+
+        var str9=str1.split("");
+        document.write("splite of programming of string is"+str9+"<br>")
+        
+        var str10=str1.length
+        document.write("length of string is"+str10+"<br>")
+
+        var str11=str1.slice(1,7);
+        document.write("sliced of sentance  is"+str11+"<br>")
+
+        var str12=str1.replace("programming","application")
+        document.write("replaced of sentance is"+str12+"<br>")
+
+        document.write("replaced sentance"+str12.replace("application","web program"))
+        
+
+    </script>
+</body>
+</html>
