@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function exam(form)
+        {
+            var i=0;
+            if(form.one[2].checked)
+            i=i+5;
+            if(form.two[3].checked)
+            i=i+20
+            if(form.three[1].checked)
+            i=i+15
+            if(form.four[1].checked)
+            i=i+25
+            if(form.five[0].checked)
+            i=i+10
+            window.alert("tankyou for attending exam,your score is"+i)
+        }
+    </script>
+</head>
+<body>
+    <h2>online exam questions</h2>
+    <form onsubmit="exam(this)">
+
+    <p>
+        <label> what is the colour of sky?</label>
+        <label>red</label>
+        <input type="radio" name="one" value="red"></input>
+        <label>blue</label>
+        <input type="radio" name="one" value="blue"></input>
+        <label>green</label>
+        <input type="radio" name="one" value="green"></input>
+        <label>orange</label>
+        <input type="radio" name="one" value="orange"></input>
+        <label>skyblue</label>
+        <input type="radio" name="one" value="skyblue"></input>
+
+    </p>
+    <p>
+        <label> what is the colour of home?</label>
+        <label>blue</label>
+        <input type="radio" name="two" value="blue"></input>
+        <label>red</label>
+        <input type="radio" name="two" value="red"></input>
+        <label>green</label>
+        <input type="radio" name="two" value="green"></input>
+        <label>orange</label>
+        <input type="radio" name="two" value="orange"></input>
+        <label>skyblue</label>
+        <input type="radio" name="two" value="skyblue"></input>
+
+    </p>
+    <p>
+        <label> how many distict in kerala?</label>
+        <label>13</label>
+        <input type="radio" name="three" value="13"></input>
+        <label>14</label>
+        <input type="radio" name="three" value="14"></input>
+        <label>4</label>
+        <input type="radio" name="three" value="4"></input>
+        <label>5</label>
+        <input type="radio" name="three" value="5"></input>
+        <label>8</label>
+        <input type="radio" name="three" value="8"></input>
+
+    </p>
+    <p>
+        <label> how many colours in rainbow?</label>
+        <label>8</label>
+        <input type="radio" name="four" value="8"></input>
+        <label>7</label>
+        <input type="radio" name="four" value="7"></input>
+        <label>4</label>
+        <input type="radio" name="four" value="4"></input>
+        <label>5</label>
+        <input type="radio" name="four" value="5"></input>
+        <label>9</label>
+        <input type="radio" name="four" value="9"></input>
+    </p>
+    <p>
+        <label> add 1+2 ?</label>
+        <label>3</label>
+        <input type="radio" name="five" value="3"></input>
+        <label>6</label>
+        <input type="radio" name="five" value="6"></input>
+        <label>4</label>
+        <input type="radio" name="five" value="4"></input>
+        <label>5</label>
+        <input type="radio" name="five" value="5"></input>
+        <label>9</label>
+        <input type="radio" name="five" value="9"></input>
+    </p>
+
+    <input type="submit" value="submit"></input>
+    <input type="reset" value="reset"></input>
+    
+
+    </form>
+    
+    
+</body>
+</html>
