@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="sky blue">
+    
+   
+    <div class="content"id="content">
+    <img src="image1.jpg" id="A">
+    <h1 id="B">
+        IMAGE PRINT
+    </h1>
+    <h2 id="C">
+        MOUSE OVER HERE 
+    </h2>
+    
+    
+    </div>
+    <script>
+        document.getElementById("A").addEventListener("mouseover",change1);
+        document.getElementById("A").addEventListener("mouseout",change2);
+        function change1()
+        {
+            document.getElementById("A").src="image3.jpg";
+            document.getElementById("B").style.display="none";
+            document.getElementById("C").style.display="block";
+
+        }
+        function change2()
+        {
+            document.getElementById("A").src="image2.jpg";
+            document.getElementById("B").style.display="block";
+            document.getElementById("C").style.display="none";
+        }
+    </script>
+</body>
+</html>
