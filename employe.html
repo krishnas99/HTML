@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function registration(form)
+        {
+            var firstname=document.getElementById("a")
+            var middilename=document.getElementById("b")
+            var lastname=document.getElementById("e")
+            var Designation=document.getElementById("f")
+            var Address=document.getElementById("g")
+            var Gender=document.getElementById("h")
+            var phonenumber=document.getElementById("i")
+            var Email=document.getElementById("j")
+            var password=document.getElementById("k")
+            var skills=document.getElementById("l")
+            var formValid=false;
+            if(a.Value==""||a.Value==null)
+            {
+                window.alert("please enter your first name");
+                return false;
+            }
+            if(b.Value==""||b.Value==null)
+            {
+                window.alert("please enter your middile name");
+                return false;
+            }
+                if(c.Value==""||c.Value==null)
+            {
+              window.alert("please enter your last name name");
+                return false;
+            }
+            if(d.Value==""||d.Value==null)
+            {
+                window.alert("please enter your Address ");
+                return false;
+            }
+            if(!e.checked && ! )
+            {
+                window.alert("please enter your ");
+                return false;
+            }
+            if(d.Value==""||b.Value==null)
+            {
+                window.alert("please enter your Designation ");
+                return false;
+            }
+            if(d.Value==""||b.Value==null)
+            {
+                window.alert("please enter your Designation ");
+                return false;
+            }
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form onsubmit="return registration()">
+        
+        <h1>EMPLOYEE REGISTRATION FORM</h1>
+        <table>
+        <tr>
+            <td><label>first Name</label></td>
+            <td><input type="text" name="first name" size=20 placeholder="enter your first name" id="a"/><br></td>
+        </tr>
+        <tr>
+
+        <td><label> Middile Name</label></td>
+        <td><input type="text" name="middile name" size=20 placeholder="enter your middile name" id="b"/><br></td>
+        </tr>
+        <tr>
+
+        <td><label>last Name</label></td>
+        <td><input type="text" name="last Name" size="20" placeholder="enter your last name" id="c"/><br></td>
+        </tr>
+        
+
+       <label>Designation</label>
+        <select id="d">
+            <option value="Designation" designation</option>
+            <option value="HR" HR</option>
+            <option value="SALES" SALES</option>
+            <option value="FINANCE" FINANCE</option>
+        </select>
+
+        <label>Address</label>
+	    <textarea cols=50 rows=5 Name="Address" size=50 placeholder="Address" id="e"></textarea><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender"value="Male" id="f"/>Male
+	    <input  type="radio" name="gender" value="Female" id="g"/>Female
+	    <input type="radio" name="gender" value="Others" id="h"/>Others<br>
+
+        
+        <label>Phone number</label></td>
+	    <input type="text" Name="country code" value="+91" size="2" placeholder="Enter your country code"/>
+	    <input type="text" Name="phone number" size="10" placeholder="enter your phone number" id="i"/><br>
+
+        <label>email</label>
+        <input type="email" name="email" size=20 placeholder="enter your vaid email" id="j"/><br>
+
+
+	    <label>password</label>
+	    <input type="password" Name="password" size=20 placeholder="Enter your password" id="k"/><br>
+
+        <label>skills</label>
+        <input type="checkbox" name="skills" size=20  id="l"/><br>
+
+        <input type="button" value="submit"/>
+	    <input type="button" value="Cancel"/>
+
+
+        
+</form>
+    
+
+
+    
+</body>
+</html>
